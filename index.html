@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relations</title>
+    <title>Save-Up Planner</title>
     <link rel="stylesheet" href="styles.css">
     <!-- <link rel="icon" href="images\logo.png" type="image/png" sizes="16x16"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Spartan&display=swap" rel="stylesheet">
-    <script src="/actions.js"></script>
 </head>
 <body>
     <h1 class="title">Save-up Planner</h1>
     <section class="elements__container">
-        <div class="elements">
+        <form class="elements">
             <div class="elements__item">
             <input type="radio" id="cop" name="coin" value="cop">
             <label for="cop">COP</label><br>
@@ -26,8 +25,8 @@
 
             <input class="elements__item" id="element__title" type="text" placeholder="Item"><br>
             <input class="elements__item" id="element__cost" type="number" placeholder="Cost"><br>
-            <button class="elements__item" id="enter">Enter</button>
-        </div>
+            <button class="elements__item" id="enter" type="button">Enter</button>
+        </form>
     </section>
 
     <section class="elements__container">
@@ -36,8 +35,9 @@
             <p class="elements__list--item">COP</p>
             <p class="elements__list--item">EUR</p>
         </div>
-        <ul>
-            
+        <ul id="items__list">
+                      
+                      
         </ul>
 
     </section>
